@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
 import type { AppDispatch, AppState } from '../redux/store';

@@ -1,27 +1,27 @@
-import CenteredFlex from '../styles/components/CenteredFlex';
-import Image from 'next/image';
+import { Flex, Text } from '@chakra-ui/react';
 
-const Footer = () => {
+const Logo = () => {
   return (
-    <CenteredFlex
-      as="footer"
+    <Text px={'4'} fontWeight={'bold'}>
+      TechReview
+    </Text>
+  );
+};
+
+const Header = () => {
+  return (
+    <Flex
+      as="header"
+      justifyContent={'space-between'}
+      alignItems={'center'}
       bg={'primary.800'}
       w={'100%'}
       color={'white'}
       h={'4rem'}
     >
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{' '}
-        <span>
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </span>
-      </a>
-    </CenteredFlex>
+      <Logo />
+    </Flex>
   );
 };
 
-export default Footer;
+export default Header;
